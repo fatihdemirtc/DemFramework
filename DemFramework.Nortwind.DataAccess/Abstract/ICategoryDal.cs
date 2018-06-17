@@ -5,6 +5,6 @@ namespace DemFramework.Nortwind.DataAccess.Abstract
 {
     public interface ICategoryDal : IEntityRepository<Category>
     {
-
+         
     }
 }
