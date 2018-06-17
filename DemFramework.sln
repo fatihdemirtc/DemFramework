@@ -3,7 +3,92 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2010
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemFramework.Core", "DemFramework.Core\DemFramework.Core.csproj", "{1AF3ACC2-66C4-4B97-9891-0A6BA86C61D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemFramework.Nortwind.Entities", "DemFramework.Nortwind.Entities\DemFramework.Nortwind.Entities.csproj", "{85F73026-88D7-4345-A744-F1737CD48D9E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemFramework.Nortwind.DataAccess", "DemFramework.Nortwind.DataAccess\DemFramework.Nortwind.DataAccess.csproj", "{BC74316F-AADB-4198-AFBF-3B1E635AFB33}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemFramework.Nortwind.Business", "DemFramework.Nortwind.Business\DemFramework.Nortwind.Business.csproj", "{4901DFD4-9D4F-4F6A-985E-9C36A6F6643C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemFramework.Nortwind.MvcWebUI", "DemFramework.Nortwind.MvcWebUI\DemFramework.Nortwind.MvcWebUI.csproj", "{10E6A991-EC6E-4A6F-945B-338AEAFC8B8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemFramework.Nortwind.MvcWebUI.Tests", "DemFramework.Nortwind.MvcWebUI.Tests\DemFramework.Nortwind.MvcWebUI.Tests.csproj", "{4C73AAB7-B762-4F7F-A686-27EC883F0347}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemFramework.DataAccess.Tests", "DemFramework.DataAccess.Tests\DemFramework.DataAccess.Tests.csproj", "{C3C2644F-7B1F-4892-840E-F574F8D1769F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemFramework.Nortwind.Business.Tests", "DemFramework.Nortwind.Business.Tests\DemFramework.Nortwind.Business.Tests.csproj", "{7722C8E8-0A43-4258-AC17-D53993AB4D20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemFramework.Nortwind.WebApi", "DemFramework.Nortwind.WebApi\DemFramework.Nortwind.WebApi.csproj", "{F0C91F76-E121-417E-B504-4C9317ECD7B4}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "DemFramework.Nortwind.WcfService", "DemFramework.Nortwind.WcfService\", "{4874D63A-3DAF-476B-8687-68147EDB2A85}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6.1"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_62911"
+		Debug.AspNetCompiler.PhysicalPath = "DemFramework.Nortwind.WcfService\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_62911\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_62911"
+		Release.AspNetCompiler.PhysicalPath = "DemFramework.Nortwind.WcfService\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_62911\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "62911"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1AF3ACC2-66C4-4B97-9891-0A6BA86C61D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AF3ACC2-66C4-4B97-9891-0A6BA86C61D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AF3ACC2-66C4-4B97-9891-0A6BA86C61D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AF3ACC2-66C4-4B97-9891-0A6BA86C61D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85F73026-88D7-4345-A744-F1737CD48D9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85F73026-88D7-4345-A744-F1737CD48D9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85F73026-88D7-4345-A744-F1737CD48D9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85F73026-88D7-4345-A744-F1737CD48D9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC74316F-AADB-4198-AFBF-3B1E635AFB33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC74316F-AADB-4198-AFBF-3B1E635AFB33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC74316F-AADB-4198-AFBF-3B1E635AFB33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC74316F-AADB-4198-AFBF-3B1E635AFB33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4901DFD4-9D4F-4F6A-985E-9C36A6F6643C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4901DFD4-9D4F-4F6A-985E-9C36A6F6643C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4901DFD4-9D4F-4F6A-985E-9C36A6F6643C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4901DFD4-9D4F-4F6A-985E-9C36A6F6643C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10E6A991-EC6E-4A6F-945B-338AEAFC8B8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10E6A991-EC6E-4A6F-945B-338AEAFC8B8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10E6A991-EC6E-4A6F-945B-338AEAFC8B8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10E6A991-EC6E-4A6F-945B-338AEAFC8B8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C73AAB7-B762-4F7F-A686-27EC883F0347}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C73AAB7-B762-4F7F-A686-27EC883F0347}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C73AAB7-B762-4F7F-A686-27EC883F0347}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C73AAB7-B762-4F7F-A686-27EC883F0347}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3C2644F-7B1F-4892-840E-F574F8D1769F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3C2644F-7B1F-4892-840E-F574F8D1769F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3C2644F-7B1F-4892-840E-F574F8D1769F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3C2644F-7B1F-4892-840E-F574F8D1769F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7722C8E8-0A43-4258-AC17-D53993AB4D20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7722C8E8-0A43-4258-AC17-D53993AB4D20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7722C8E8-0A43-4258-AC17-D53993AB4D20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7722C8E8-0A43-4258-AC17-D53993AB4D20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0C91F76-E121-417E-B504-4C9317ECD7B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0C91F76-E121-417E-B504-4C9317ECD7B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0C91F76-E121-417E-B504-4C9317ECD7B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0C91F76-E121-417E-B504-4C9317ECD7B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4874D63A-3DAF-476B-8687-68147EDB2A85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4874D63A-3DAF-476B-8687-68147EDB2A85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4874D63A-3DAF-476B-8687-68147EDB2A85}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{4874D63A-3DAF-476B-8687-68147EDB2A85}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
