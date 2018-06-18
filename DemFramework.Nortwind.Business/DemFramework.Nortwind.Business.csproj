@@ -30,7 +30,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="FluentValidation, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7de548da2fbae0f0, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentValidation.7.6.103\lib\net45\FluentValidation.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Annotations, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ComponentModel.Annotations.4.4.1\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.ComponentModel.Primitives, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ComponentModel.Primitives.4.3.0\lib\net45\System.ComponentModel.Primitives.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -40,7 +50,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\IProductService.cs" />
+    <Compile Include="Concrete\Managers\ProductManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ValidationRules\FluentValidation\ProductValidatior.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DemFramework.Core\DemFramework.Core.csproj">
+      <Project>{1AF3ACC2-66C4-4B97-9891-0A6BA86C61D7}</Project>
+      <Name>DemFramework.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DemFramework.Nortwind.DataAccess\DemFramework.Nortwind.DataAccess.csproj">
+      <Project>{BC74316F-AADB-4198-AFBF-3B1E635AFB33}</Project>
+      <Name>DemFramework.Nortwind.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DemFramework.Nortwind.Entities\DemFramework.Nortwind.Entities.csproj">
+      <Project>{85F73026-88D7-4345-A744-F1737CD48D9E}</Project>
+      <Name>DemFramework.Nortwind.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
