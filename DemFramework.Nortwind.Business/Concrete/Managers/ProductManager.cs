@@ -8,6 +8,7 @@ using DemFramework.Nortwind.Business.Abstract;
 using DemFramework.Nortwind.Business.ValidationRules.FluentValidation;
 using DemFramework.Nortwind.DataAccess.Abstract;
 using DemFramework.Nortwind.Entities.Concrete;
+using DemFramework.Core.Aspects.Postsharp;
 
 namespace DemFramework.Nortwind.Business.Concrete.Managers
 {
@@ -30,14 +31,14 @@ namespace DemFramework.Nortwind.Business.Concrete.Managers
             return _productDal.Get(p => p.ProductId == id);
         }
 
-        [FluentValidate(typeof(ProductValidatior))]
+        [FluentValidationAspect(typeof(ProductValidatior))]
         public Product Add(Product product)
         {
             ValidatorTool.FluentValidate(new ProductValidatior(), product);
             return _productDal.Add(product);
         }
 
-        [FluentValidate(typeof(ProductValidatior))]
+        [FluentValidationAspect(typeof(ProductValidatior))]
         public Product Update(Product product)
         {
             ValidatorTool.FluentValidate(new ProductValidatior(), product);
